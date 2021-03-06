@@ -7,3 +7,7 @@ Neste pequeno projeto que preparei para você vamos utilizar o Leaflet.js o Char
 - Adicionar Dados, Eventos, Popups e Controles no Mapa
 - Criar Gráficos com Chart.js
 - Atualizar Indicadores e Gráficos conforme o usuário interagir com o Mapa
+
+## GitHub Pages
+
+Confere aqui como ficou nosso projeto: [LeafLet dashboard](https://diegogeodev.github.io/Dashboard/)
