@@ -280,6 +280,7 @@ const barDataAndOptions = () => {
 
 // LOAD DATA - SEARCH
 loadGeojson('./search.geojson').then((data) => {
+	map.invalidateSize();
 	// CREATE LAYER
 	const search = createMarkersFromGeojson(data);
 
