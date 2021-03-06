@@ -153,6 +153,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	user-select: none;
 }
 
@@ -219,9 +220,8 @@
 }
 
 .content__data__map {
-	height: calc(100% - 16px);
-	width: calc(100% - 16px);
-	margin: 8px;
+	height: 96%;
+	width: 96%;
 }
 
 .content__data__item_text {
