@@ -280,37 +280,35 @@ const barDataAndOptions = () => {
 
 // LOAD DATA - SEARCH
 loadGeojson('./search.geojson').then((data) => {
-	setTimeout(() => {
-		// CREATE LAYER
-		const search = createMarkersFromGeojson(data);
+	// CREATE LAYER
+	const search = createMarkersFromGeojson(data);
 
-		// CREATE A LAYER GROUP
-		const searchLayers = L.layerGroup([search]);
-		searchLayers.addTo(map);
+	// CREATE A LAYER GROUP
+	const searchLayers = L.layerGroup([search]);
+	searchLayers.addTo(map);
 
-		// ADD TO LAYER CONTROL
-		layerControl.addOverlay(searchLayers, 'Search');
+	// ADD TO LAYER CONTROL
+	layerControl.addOverlay(searchLayers, 'Search');
 
-		// DOUGHNUT CHART
-		const [doughnutData, doughnutOptions] = doughnutDataAndOptions();
-		const doughnutChart = new Chart('doughnut', {
-			type: 'doughnut',
-			data: doughnutData,
-			options: doughnutOptions,
-		});
+	// DOUGHNUT CHART
+	const [doughnutData, doughnutOptions] = doughnutDataAndOptions();
+	const doughnutChart = new Chart('doughnut', {
+		type: 'doughnut',
+		data: doughnutData,
+		options: doughnutOptions,
+	});
 
-		// BAR CHART
-		const [barData, barOptions] = barDataAndOptions();
-		const barChart = new Chart('bar', {
-			type: 'bar',
-			data: barData,
-			options: barOptions,
-		});
+	// BAR CHART
+	const [barData, barOptions] = barDataAndOptions();
+	const barChart = new Chart('bar', {
+		type: 'bar',
+		data: barData,
+		options: barOptions,
+	});
 
-		// INITIAL DATA
-		updateDashbord(searchLayers, doughnutChart, barChart);
+	// INITIAL DATA
+	updateDashbord(searchLayers, doughnutChart, barChart);
 
-		// MAP EVENTS
-		map.on('moveend', () => updateDashbord(searchLayers, doughnutChart, barChart));
-	}, 500);
+	// MAP EVENTS
+	map.on('moveend', () => updateDashbord(searchLayers, doughnutChart, barChart));
 });
