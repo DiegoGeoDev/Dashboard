@@ -1,0 +1,15 @@
+https://leafletjs.com/
+https://turfjs.org/docs/#buffer
+https://www.chartjs.org/
+https://ionicons.com/
+
+Ao clicar no mapa criar um círculo com um raio de atuação
+Ver quantas pontos ficam dentro do raio
+
+https://turfjs.org/docs/#booleanIntersects
+
+https://www.chartjs.org/docs/latest/charts/doughnut.html
+https://www.mundojs.com.br/2019/06/12/graficos-pie-e-doughnut-com-chart-js/
+https://www.chartjs.org/docs/latest/developers/updates.html
+
+https://github.com/CGastrell/leaflet-simple-button
