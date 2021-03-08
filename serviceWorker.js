@@ -1,5 +1,5 @@
-const leafletDashboard = 'leaflet-dashboard';
-const assets = [
+const CACHE_NAME = 'leaflet-dashboard-v1';
+const ASSETS = [
 	'./',
 	'./index.html',
 	'./index.css',
@@ -11,9 +11,24 @@ const assets = [
 
 self.addEventListener('install', (installEvent) => {
 	installEvent.waitUntil(
-		caches.open(leafletDashboard).then((cache) => {
-			cache.addAll(assets);
+		caches.open(CACHE_NAME).then((cache) => {
+			cache.addAll(ASSETS);
 		})
+	);
+});
+
+self.addEventListener('activate', (activateEvent) => {
+	activateEvent.waitUntil(
+		caches.keys().then((keyList) =>
+			Promise.all(
+				keyList.map((key) => {
+					if (key !== CACHE_NAME) {
+						console.log('[ServiceWorker] Removing old cache', key);
+						return caches.delete(key);
+					}
+				})
+			)
+		)
 	);
 });
 
