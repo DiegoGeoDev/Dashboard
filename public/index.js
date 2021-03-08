@@ -1,3 +1,13 @@
+// SERVICE WORKER
+if ('serviceWorker' in navigator) {
+	window.addEventListener('load', function () {
+		navigator.serviceWorker
+			.register('./serviceWorker.js')
+			.then((res) => console.log('service worker registered'))
+			.catch((err) => console.log('service worker not registered', err));
+	});
+}
+
 // DOM
 const menAvg = document.getElementById('men-avg');
 const womenAvg = document.getElementById('women-avg');
