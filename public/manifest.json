@@ -1,8 +1,8 @@
 {
 	"name": "Leaflet Dashboard",
 	"short_name": "Leaflet Dashboard",
-	"start_url": "/public/index.html",
-	"scope": "/public/index.html",
+	"start_url": "/Dashboard",
+	"scope": "/Dashboard",
 	"display": "standalone",
 	"background_color": "#333",
 	"theme_color": "#8838f9",
