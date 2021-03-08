@@ -1,8 +1,8 @@
 {
 	"name": "Leaflet Dashboard",
 	"short_name": "Leaflet Dashboard",
-	"start_url": "/Dashboard",
-	"scope": "/Dashboard",
+	"start_url": "https://diegogeodev.github.io/Dashboard/",
+	"scope": "https://diegogeodev.github.io/Dashboard/",
 	"display": "standalone",
 	"background_color": "#333",
 	"theme_color": "#8838f9",
