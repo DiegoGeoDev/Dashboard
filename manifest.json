@@ -4,7 +4,7 @@
 	"start_url": "https://diegogeodev.github.io/Dashboard/",
 	"scope": "https://diegogeodev.github.io/Dashboard/",
 	"display": "standalone",
-	"background_color": "#8838f9",
+	"background_color": "#ffffff",
 	"theme_color": "#8838f9",
 	"orientation": "portrait",
 	"icons": [
