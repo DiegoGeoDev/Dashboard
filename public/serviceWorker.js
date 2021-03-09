@@ -1,4 +1,4 @@
-const CACHE_NAME = 'leaflet-dashboard-v5';
+const CACHE_NAME = 'leaflet-dashboard-v1';
 const ASSETS = [
 	'./',
 	'./index.html',
