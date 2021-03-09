@@ -1,4 +1,4 @@
-const CACHE_NAME = 'leaflet-dashboard-v4';
+const CACHE_NAME = 'leaflet-dashboard-v5';
 const ASSETS = [
 	'./',
 	'./index.html',
@@ -7,15 +7,6 @@ const ASSETS = [
 	'./marker-men.png',
 	'./marker-women.png',
 	'./search.geojson',
-	'./Leaflet-1.7.1/dist/images/layers-2x.png',
-	'./Leaflet-1.7.1/dist/images/layers.png',
-	'./Leaflet-1.7.1/dist/images/marker-icon-2x.png',
-	'./Leaflet-1.7.1/dist/images/marker-icon.png',
-	'./Leaflet-1.7.1/dist/images/marker-shadow.png',
-	'./Leaflet-1.7.1/dist/leaflet.css',
-	'./Leaflet-1.7.1/dist/leaflet.js',
-	'./Chart.js-2.9.4/dist/Chart.min.css',
-	'./Chart.js-2.9.4/dist/Chart.min.js',
 ];
 
 self.addEventListener('install', (installEvent) => {
